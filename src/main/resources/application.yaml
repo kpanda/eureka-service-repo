@@ -1,0 +1,18 @@
+spring:
+ profiles:
+  active: dev
+ application:
+  name: netflix-eureka-naming-server
+  
+Server:
+ port: 8761  
+--- 
+spring:
+ profiles: dev 
+eureka:
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+
+  
+   
